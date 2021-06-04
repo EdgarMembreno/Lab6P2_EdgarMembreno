@@ -27,21 +27,291 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jd_agregar_Alumnos = new javax.swing.JDialog();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        nombre_Alumno = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        apellido_Alumno = new javax.swing.JTextField();
+        edad_Alumno = new javax.swing.JTextField();
+        registro_Alumno = new javax.swing.JTextField();
+        id_Alumno = new javax.swing.JTextField();
+        carrera_Alumno = new javax.swing.JTextField();
+        acarrera_Alumno = new javax.swing.JTextField();
+        promedio_Alumno = new javax.swing.JTextField();
+        user_Alumno = new javax.swing.JTextField();
+        pass_Alumno = new javax.swing.JTextField();
+        salud_Alumno = new javax.swing.JRadioButton();
+        ingieneria_Alumno = new javax.swing.JRadioButton();
+        licenciatura_Alumno = new javax.swing.JRadioButton();
+        agregar_Alumno = new javax.swing.JButton();
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        Login = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        Alumnos = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        crear_Alumno = new javax.swing.JMenuItem();
+        listar_Alumnos = new javax.swing.JMenuItem();
+        modificar_Alumnos = new javax.swing.JMenuItem();
+        eliminar_Alumnos = new javax.swing.JMenuItem();
+        Docentos = new javax.swing.JMenu();
+        Clases = new javax.swing.JMenu();
+        Proyectos = new javax.swing.JMenu();
+
+        jLabel1.setText("Nombre");
+
+        jLabel2.setFont(new java.awt.Font("Lucida Sans", 1, 18)); // NOI18N
+        jLabel2.setText("Crear Alumno");
+
+        jLabel3.setText("Apellido");
+
+        jLabel4.setText("Edad");
+
+        jLabel5.setText("Numero Registrp");
+
+        jLabel6.setText("ID");
+
+        jLabel7.setText("Carrera");
+
+        jLabel8.setText("Año de Carrera");
+
+        jLabel9.setText("Promedio");
+
+        jLabel10.setText("Facultad");
+
+        jLabel11.setText("User");
+
+        jLabel12.setText("Password");
+
+        buttonGroup1.add(salud_Alumno);
+        salud_Alumno.setText("Salud");
+
+        buttonGroup1.add(ingieneria_Alumno);
+        ingieneria_Alumno.setText("Ingieneria");
+
+        buttonGroup1.add(licenciatura_Alumno);
+        licenciatura_Alumno.setText("Licenciatura");
+
+        agregar_Alumno.setText("Agregar");
+        agregar_Alumno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                agregar_AlumnoMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_agregar_AlumnosLayout = new javax.swing.GroupLayout(jd_agregar_Alumnos.getContentPane());
+        jd_agregar_Alumnos.getContentPane().setLayout(jd_agregar_AlumnosLayout);
+        jd_agregar_AlumnosLayout.setHorizontalGroup(
+            jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_agregar_AlumnosLayout.createSequentialGroup()
+                .addGap(114, 114, 114)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_agregar_AlumnosLayout.createSequentialGroup()
+                        .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel12))
+                        .addGap(120, 120, 120)
+                        .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel2)
+                            .addComponent(nombre_Alumno, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+                            .addComponent(apellido_Alumno)
+                            .addComponent(edad_Alumno)
+                            .addComponent(registro_Alumno)
+                            .addComponent(id_Alumno)
+                            .addComponent(carrera_Alumno)
+                            .addComponent(acarrera_Alumno)
+                            .addComponent(promedio_Alumno)
+                            .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(pass_Alumno, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                                .addComponent(user_Alumno, javax.swing.GroupLayout.Alignment.LEADING))))
+                    .addGroup(jd_agregar_AlumnosLayout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addGap(164, 164, 164)
+                        .addComponent(salud_Alumno)
+                        .addGap(37, 37, 37)
+                        .addComponent(ingieneria_Alumno)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(licenciatura_Alumno)))
+                .addContainerGap(163, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_agregar_AlumnosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(agregar_Alumno)
+                .addGap(77, 77, 77))
+        );
+        jd_agregar_AlumnosLayout.setVerticalGroup(
+            jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_agregar_AlumnosLayout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jLabel2)
+                .addGap(31, 31, 31)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(nombre_Alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(apellido_Alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(edad_Alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addComponent(registro_Alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addComponent(id_Alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7)
+                    .addComponent(carrera_Alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(acarrera_Alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9)
+                    .addComponent(promedio_Alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10)
+                    .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(salud_Alumno)
+                        .addComponent(ingieneria_Alumno)
+                        .addComponent(licenciatura_Alumno)))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11)
+                    .addComponent(user_Alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_agregar_AlumnosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12)
+                    .addComponent(pass_Alumno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(agregar_Alumno)
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        Login.setText("Login");
+
+        jMenuItem1.setText("Login");
+        Login.add(jMenuItem1);
+
+        jMenuBar1.add(Login);
+
+        Alumnos.setText("Alumnos");
+
+        jMenu1.setText("Opciones");
+
+        crear_Alumno.setText("Crear");
+        crear_Alumno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                crear_AlumnoActionPerformed(evt);
+            }
+        });
+        jMenu1.add(crear_Alumno);
+
+        listar_Alumnos.setText("Listar");
+        jMenu1.add(listar_Alumnos);
+
+        modificar_Alumnos.setText("Modificar");
+        jMenu1.add(modificar_Alumnos);
+
+        eliminar_Alumnos.setText("Eliminar");
+        jMenu1.add(eliminar_Alumnos);
+
+        Alumnos.add(jMenu1);
+
+        jMenuBar1.add(Alumnos);
+
+        Docentos.setText("Docentes");
+        jMenuBar1.add(Docentos);
+
+        Clases.setText("Clases");
+        jMenuBar1.add(Clases);
+
+        Proyectos.setText("Proyectos");
+        jMenuBar1.add(Proyectos);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 633, Short.MAX_VALUE)
+            .addGap(0, 772, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 435, Short.MAX_VALUE)
+            .addGap(0, 485, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void crear_AlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crear_AlumnoActionPerformed
+        jd_agregar_Alumnos.setModal(true);
+        jd_agregar_Alumnos.pack();
+        jd_agregar_Alumnos.setLocationRelativeTo(this);
+        jd_agregar_Alumnos.setVisible(true);
+    }//GEN-LAST:event_crear_AlumnoActionPerformed
+
+    private void agregar_AlumnoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregar_AlumnoMouseClicked
+      String nombre, apellido, carrera, promedio, user,pass;
+      String facultad = "";
+      int edad, registro, id, acarrera;
+      nombre = nombre_Alumno.getText();
+      apellido = apellido_Alumno.getText();
+      carrera = carrera_Alumno.getText();
+      promedio = promedio_Alumno.getText();
+      user = user_Alumno.getText();
+        if (salud_Alumno.isSelected()) {
+            facultad = "Salud";
+        }else if (ingieneria_Alumno.isSelected()) {
+            facultad = "Ingeniería";
+            
+        }else if (licenciatura_Alumno.isSelected()) {
+            facultad = "Licenciatura";
+        }
+       edad = Integer.parseInt( edad_Alumno.getText());
+       registro = Integer.parseInt(registro_Alumno.getText());
+       id =Integer.parseInt(id_Alumno.getText());
+       acarrera = Integer.parseInt(acarrera_Alumno.getText());
+        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        
+    }//GEN-LAST:event_agregar_AlumnoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -79,5 +349,45 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Alumnos;
+    private javax.swing.JMenu Clases;
+    private javax.swing.JMenu Docentos;
+    private javax.swing.JMenu Login;
+    private javax.swing.JMenu Proyectos;
+    private javax.swing.JTextField acarrera_Alumno;
+    private javax.swing.JButton agregar_Alumno;
+    private javax.swing.JTextField apellido_Alumno;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JTextField carrera_Alumno;
+    private javax.swing.JMenuItem crear_Alumno;
+    private javax.swing.JTextField edad_Alumno;
+    private javax.swing.JMenuItem eliminar_Alumnos;
+    private javax.swing.JTextField id_Alumno;
+    private javax.swing.JRadioButton ingieneria_Alumno;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JDialog jd_agregar_Alumnos;
+    private javax.swing.JRadioButton licenciatura_Alumno;
+    private javax.swing.JMenuItem listar_Alumnos;
+    private javax.swing.JMenuItem modificar_Alumnos;
+    private javax.swing.JTextField nombre_Alumno;
+    private javax.swing.JTextField pass_Alumno;
+    private javax.swing.JTextField promedio_Alumno;
+    private javax.swing.JTextField registro_Alumno;
+    private javax.swing.JRadioButton salud_Alumno;
+    private javax.swing.JTextField user_Alumno;
     // End of variables declaration//GEN-END:variables
 }

@@ -19,23 +19,20 @@ public class Clases {
     private String codig_carrera;
     private int cantidad_alumnos;
     private int num_aula;
-    private ArrayList proyectos;
-    private ArrayList alumnos;
     private String user;
     private String pass;
 
     public Clases() {
     }
 
-    public Clases(String nombre, String seccion, int codigo, String codig_carrera, int cantidad_alumnos, int num_aula, ArrayList proyectos, ArrayList alumnos, String user, String pass) {
+    public Clases(String nombre, String seccion, int codigo, String codig_carrera, int cantidad_alumnos, int num_aula,String user, String pass) {
         this.nombre = nombre;
         this.seccion = seccion;
         this.codigo = codigo;
         this.codig_carrera = codig_carrera;
         this.cantidad_alumnos = cantidad_alumnos;
         this.num_aula = num_aula;
-        this.proyectos = proyectos;
-        this.alumnos = alumnos;
+       
         this.user = user;
         this.pass = pass;
     }
@@ -88,21 +85,8 @@ public class Clases {
         this.num_aula = num_aula;
     }
 
-    public ArrayList getProyectos() {
-        return proyectos;
-    }
-
-    public void setProyectos(ArrayList proyectos) {
-        this.proyectos = proyectos;
-    }
-
-    public ArrayList getAlumnos() {
-        return alumnos;
-    }
-
-    public void setAlumnos(ArrayList alumnos) {
-        this.alumnos = alumnos;
-    }
+    
+    
 
     public String getUser() {
         return user;
@@ -122,7 +106,7 @@ public class Clases {
 
     @Override
     public String toString() {
-        return "Clases{" + "nombre=" + nombre + ", seccion=" + seccion + ", codigo=" + codigo + ", codig_carrera=" + codig_carrera + ", cantidad_alumnos=" + cantidad_alumnos + ", num_aula=" + num_aula + ", proyectos=" + proyectos + ", alumnos=" + alumnos + ", user=" + user + ", pass=" + pass + '}';
+        return "Clases{" + "nombre=" + nombre + ", seccion=" + seccion + ", codigo=" + codigo + ", codig_carrera=" + codig_carrera + ", cantidad_alumnos=" + cantidad_alumnos + ", num_aula=" + num_aula +  ", user=" + user + ", pass=" + pass + '}';
     }
 
     

@@ -24,7 +24,7 @@ public class Proyecto {
     public Proyecto() {
     }
 
-    public Proyecto(String titulo, String descrip, int puntuacion, int difivultad, String tiempo_duracion, int cantParticipantes, String fecha) {
+    public Proyecto(String titulo, String descrip, int puntuacion, int difivultad, String tiempo_duracion, int cantParticipantes, String fecha, String user, String pass) {
         this.titulo = titulo;
         this.descrip = descrip;
         this.puntuacion = puntuacion;
@@ -32,6 +32,8 @@ public class Proyecto {
         this.tiempo_duracion = tiempo_duracion;
         this.cantParticipantes = cantParticipantes;
         this.fecha = fecha;
+        this.user = user;
+        this.pass = pass;
     }
 
     public String getTitulo() {
@@ -90,9 +92,26 @@ public class Proyecto {
         this.fecha = fecha;
     }
 
-    @Override
-    public String toString() {
-        return "Proyecto{" + "titulo=" + titulo + ", descrip=" + descrip + ", puntuacion=" + puntuacion + ", difivultad=" + difivultad + ", tiempo_duracion=" + tiempo_duracion + ", cantParticipantes=" + cantParticipantes + ", fecha=" + fecha + '}';
+    public String getUser() {
+        return user;
     }
 
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
+    @Override
+    public String toString() {
+        return "Proyecto{" + "titulo=" + titulo + ", descrip=" + descrip + ", puntuacion=" + puntuacion + ", difivultad=" + difivultad + ", tiempo_duracion=" + tiempo_duracion + ", cantParticipantes=" + cantParticipantes + ", fecha=" + fecha + ", user=" + user + ", pass=" + pass + '}';
+    }
+
+   
 }
