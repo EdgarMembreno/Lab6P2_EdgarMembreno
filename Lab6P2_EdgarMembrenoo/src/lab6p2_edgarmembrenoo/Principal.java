@@ -5,6 +5,7 @@
  */
 package lab6p2_edgarmembrenoo;
 
+import java.awt.Component;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -98,6 +99,57 @@ public class Principal extends javax.swing.JFrame {
         Modificar = new javax.swing.JButton();
         buttonGroup1 = new javax.swing.ButtonGroup();
         jd_AgregarDocente = new javax.swing.JDialog();
+        nombre_Docente = new javax.swing.JTextField();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        apellido_Docente = new javax.swing.JTextField();
+        registro_Docente = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        salud_Alumno2 = new javax.swing.JRadioButton();
+        ingieneria_Alumno2 = new javax.swing.JRadioButton();
+        licenciatura_Alumno2 = new javax.swing.JRadioButton();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        titulo_Docente = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
+        posgrado_Docente = new javax.swing.JTextField();
+        jLabel34 = new javax.swing.JLabel();
+        impartido_Docente = new javax.swing.JTextField();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        user_Docente = new javax.swing.JTextField();
+        pass_Docente = new javax.swing.JTextField();
+        agregar_Docente = new javax.swing.JButton();
+        jd_ListarDocentes = new javax.swing.JDialog();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jt_DocentesLista = new javax.swing.JTable();
+        jLabel37 = new javax.swing.JLabel();
+        jd_EliminarDocente = new javax.swing.JDialog();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jt_EliminarDocente = new javax.swing.JTable();
+        eliminar_Docenta = new javax.swing.JButton();
+        jLabel38 = new javax.swing.JLabel();
+        jd_modificarDocente = new javax.swing.JDialog();
+        jd_AgregarClase = new javax.swing.JDialog();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        nombre_Clase = new javax.swing.JTextField();
+        seccion_Clase = new javax.swing.JTextField();
+        codigo_clase = new javax.swing.JTextField();
+        carrera_Clase = new javax.swing.JTextField();
+        alumnos_Clase = new javax.swing.JTextField();
+        numAula_Clase = new javax.swing.JTextField();
+        user_clase = new javax.swing.JTextField();
+        pass_Clase = new javax.swing.JTextField();
+        AgregarClase = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Login = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -115,9 +167,10 @@ public class Principal extends javax.swing.JFrame {
         eliminar_Docente = new javax.swing.JMenuItem();
         Clases = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
-        listar_Docente1 = new javax.swing.JMenuItem();
-        modificar_Docente1 = new javax.swing.JMenuItem();
-        eliminar_Docente1 = new javax.swing.JMenuItem();
+        agregar_Clase = new javax.swing.JMenuItem();
+        listar_Clase = new javax.swing.JMenuItem();
+        modificar_Clase = new javax.swing.JMenuItem();
+        eliminar_Clase = new javax.swing.JMenuItem();
         Proyectos = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
         listar_Docente2 = new javax.swing.JMenuItem();
@@ -496,15 +549,327 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(35, 35, 35))
         );
 
+        jLabel27.setText("Nombre");
+
+        jLabel28.setText("Apellido");
+
+        jLabel29.setText("Facultad");
+
+        buttonGroup1.add(salud_Alumno2);
+        salud_Alumno2.setText("Salud");
+
+        buttonGroup1.add(ingieneria_Alumno2);
+        ingieneria_Alumno2.setText("Ingieneria");
+
+        buttonGroup1.add(licenciatura_Alumno2);
+        licenciatura_Alumno2.setText("Licenciatura");
+
+        jLabel30.setFont(new java.awt.Font("Lucida Sans", 1, 24)); // NOI18N
+        jLabel30.setText("Agregar Docente");
+
+        jLabel31.setText("Registro");
+
+        jLabel32.setText("Titulo");
+
+        jLabel33.setText("Titulo Posgrado");
+
+        jLabel34.setText("Impartido de Clases");
+
+        jLabel35.setText("User");
+
+        jLabel36.setText("Pass");
+
+        agregar_Docente.setText("Agregar");
+        agregar_Docente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                agregar_DocenteMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jd_AgregarDocenteLayout = new javax.swing.GroupLayout(jd_AgregarDocente.getContentPane());
         jd_AgregarDocente.getContentPane().setLayout(jd_AgregarDocenteLayout);
         jd_AgregarDocenteLayout.setHorizontalGroup(
             jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(jd_AgregarDocenteLayout.createSequentialGroup()
+                .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(agregar_Docente)
+                    .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jd_AgregarDocenteLayout.createSequentialGroup()
+                            .addGap(410, 410, 410)
+                            .addComponent(salud_Alumno2)
+                            .addGap(37, 37, 37)
+                            .addComponent(ingieneria_Alumno2)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(licenciatura_Alumno2))
+                        .addGroup(jd_AgregarDocenteLayout.createSequentialGroup()
+                            .addGap(218, 218, 218)
+                            .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel27)
+                                .addComponent(jLabel28)
+                                .addComponent(jLabel31)
+                                .addComponent(jLabel32)
+                                .addComponent(jLabel33)
+                                .addComponent(jLabel34)
+                                .addComponent(jLabel35)
+                                .addComponent(jLabel36)
+                                .addComponent(jLabel29))
+                            .addGap(57, 57, 57)
+                            .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(apellido_Docente, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+                                .addComponent(nombre_Docente, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+                                .addComponent(registro_Docente, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+                                .addComponent(titulo_Docente)
+                                .addComponent(posgrado_Docente)
+                                .addComponent(impartido_Docente)
+                                .addComponent(user_Docente)
+                                .addComponent(pass_Docente)))
+                        .addGroup(jd_AgregarDocenteLayout.createSequentialGroup()
+                            .addGap(310, 310, 310)
+                            .addComponent(jLabel30))))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
         jd_AgregarDocenteLayout.setVerticalGroup(
             jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(jd_AgregarDocenteLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addComponent(jLabel30)
+                .addGap(80, 80, 80)
+                .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jd_AgregarDocenteLayout.createSequentialGroup()
+                        .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel27)
+                            .addComponent(nombre_Docente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel28)
+                            .addComponent(apellido_Docente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(42, 42, 42))
+                    .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel31)
+                        .addComponent(registro_Docente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(23, 23, 23)
+                .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel32)
+                    .addComponent(titulo_Docente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel33)
+                    .addComponent(posgrado_Docente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel34)
+                    .addComponent(impartido_Docente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel35)
+                    .addComponent(user_Docente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel36)
+                    .addComponent(pass_Docente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(salud_Alumno2)
+                    .addComponent(ingieneria_Alumno2)
+                    .addComponent(licenciatura_Alumno2)
+                    .addComponent(jLabel29))
+                .addGap(62, 62, 62)
+                .addComponent(agregar_Docente)
+                .addContainerGap(49, Short.MAX_VALUE))
+        );
+
+        jt_DocentesLista.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Apellido", "Registro", "Titulo", "Posgrado", "Impartido", "Facultad", "User", "Pass"
+            }
+        ));
+        jScrollPane3.setViewportView(jt_DocentesLista);
+
+        jLabel37.setText("Lista de Docentes");
+
+        javax.swing.GroupLayout jd_ListarDocentesLayout = new javax.swing.GroupLayout(jd_ListarDocentes.getContentPane());
+        jd_ListarDocentes.getContentPane().setLayout(jd_ListarDocentesLayout);
+        jd_ListarDocentesLayout.setHorizontalGroup(
+            jd_ListarDocentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_ListarDocentesLayout.createSequentialGroup()
+                .addGroup(jd_ListarDocentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_ListarDocentesLayout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 747, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jd_ListarDocentesLayout.createSequentialGroup()
+                        .addGap(339, 339, 339)
+                        .addComponent(jLabel37)))
+                .addContainerGap(55, Short.MAX_VALUE))
+        );
+        jd_ListarDocentesLayout.setVerticalGroup(
+            jd_ListarDocentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_ListarDocentesLayout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jLabel37)
+                .addGap(39, 39, 39)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(89, Short.MAX_VALUE))
+        );
+
+        jt_EliminarDocente.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Apellido", "Registro", "Titulo", "Posgrado", "Impartido", "Facultad", "User", "Pass"
+            }
+        ));
+        jScrollPane4.setViewportView(jt_EliminarDocente);
+
+        eliminar_Docenta.setText("Eliminar");
+        eliminar_Docenta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                eliminar_DocentaMouseClicked(evt);
+            }
+        });
+
+        jLabel38.setText("Eliminar Docente");
+
+        javax.swing.GroupLayout jd_EliminarDocenteLayout = new javax.swing.GroupLayout(jd_EliminarDocente.getContentPane());
+        jd_EliminarDocente.getContentPane().setLayout(jd_EliminarDocenteLayout);
+        jd_EliminarDocenteLayout.setHorizontalGroup(
+            jd_EliminarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_EliminarDocenteLayout.createSequentialGroup()
+                .addGroup(jd_EliminarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_EliminarDocenteLayout.createSequentialGroup()
+                        .addGap(73, 73, 73)
+                        .addGroup(jd_EliminarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(eliminar_Docenta)
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 747, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jd_EliminarDocenteLayout.createSequentialGroup()
+                        .addGap(412, 412, 412)
+                        .addComponent(jLabel38)))
+                .addContainerGap(63, Short.MAX_VALUE))
+        );
+        jd_EliminarDocenteLayout.setVerticalGroup(
+            jd_EliminarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_EliminarDocenteLayout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(jLabel38)
+                .addGap(36, 36, 36)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(58, 58, 58)
+                .addComponent(eliminar_Docenta)
+                .addContainerGap(52, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jd_modificarDocenteLayout = new javax.swing.GroupLayout(jd_modificarDocente.getContentPane());
+        jd_modificarDocente.getContentPane().setLayout(jd_modificarDocenteLayout);
+        jd_modificarDocenteLayout.setHorizontalGroup(
+            jd_modificarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 984, Short.MAX_VALUE)
+        );
+        jd_modificarDocenteLayout.setVerticalGroup(
+            jd_modificarDocenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 739, Short.MAX_VALUE)
+        );
+
+        jLabel39.setText("Nombre");
+
+        jLabel40.setText("Seccion");
+
+        jLabel41.setText("Codigo");
+
+        jLabel42.setText("Codigo Carrera");
+
+        jLabel43.setText("Cantidad Alumnos");
+
+        jLabel44.setText("Num Aula");
+
+        jLabel45.setText("User");
+
+        jLabel46.setText("Pass");
+
+        jLabel47.setFont(new java.awt.Font("Lucida Sans", 1, 24)); // NOI18N
+        jLabel47.setText("Crear Clase");
+
+        AgregarClase.setText("Agregar");
+        AgregarClase.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AgregarClaseMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_AgregarClaseLayout = new javax.swing.GroupLayout(jd_AgregarClase.getContentPane());
+        jd_AgregarClase.getContentPane().setLayout(jd_AgregarClaseLayout);
+        jd_AgregarClaseLayout.setHorizontalGroup(
+            jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_AgregarClaseLayout.createSequentialGroup()
+                .addGap(137, 137, 137)
+                .addGroup(jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel40)
+                    .addComponent(jLabel39)
+                    .addComponent(jLabel41)
+                    .addComponent(jLabel42)
+                    .addComponent(jLabel43)
+                    .addComponent(jLabel44)
+                    .addComponent(jLabel45)
+                    .addComponent(jLabel46))
+                .addGap(42, 42, 42)
+                .addGroup(jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(nombre_Clase)
+                    .addComponent(seccion_Clase)
+                    .addComponent(codigo_clase)
+                    .addComponent(carrera_Clase)
+                    .addComponent(alumnos_Clase)
+                    .addComponent(numAula_Clase)
+                    .addComponent(user_clase)
+                    .addComponent(pass_Clase))
+                .addContainerGap(291, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_AgregarClaseLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(AgregarClase)
+                .addGap(114, 114, 114))
+        );
+        jd_AgregarClaseLayout.setVerticalGroup(
+            jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_AgregarClaseLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(jLabel47)
+                .addGap(43, 43, 43)
+                .addGroup(jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel39)
+                    .addComponent(nombre_Clase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel40)
+                    .addComponent(seccion_Clase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel41)
+                    .addComponent(codigo_clase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel42)
+                    .addComponent(carrera_Clase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel43)
+                    .addComponent(alumnos_Clase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel44)
+                    .addComponent(numAula_Clase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel45)
+                    .addComponent(user_clase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel46)
+                    .addComponent(pass_Clase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(49, 49, 49)
+                .addComponent(AgregarClase)
+                .addContainerGap(66, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -569,6 +934,11 @@ public class Principal extends javax.swing.JFrame {
         jMenu4.add(CrearDocente);
 
         listarDocentes.setText("Listar");
+        listarDocentes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                listarDocentesActionPerformed(evt);
+            }
+        });
         jMenu4.add(listarDocentes);
 
         modificar_Docente.setText("Modificar");
@@ -595,29 +965,37 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu5.setText("Opciones");
 
-        listar_Docente1.setText("Listar");
-        listar_Docente1.addActionListener(new java.awt.event.ActionListener() {
+        agregar_Clase.setText("Agregar");
+        agregar_Clase.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                listar_Docente1ActionPerformed(evt);
+                agregar_ClaseActionPerformed(evt);
             }
         });
-        jMenu5.add(listar_Docente1);
+        jMenu5.add(agregar_Clase);
 
-        modificar_Docente1.setText("Modificar");
-        modificar_Docente1.addActionListener(new java.awt.event.ActionListener() {
+        listar_Clase.setText("Listar");
+        listar_Clase.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                modificar_Docente1ActionPerformed(evt);
+                listar_ClaseActionPerformed(evt);
             }
         });
-        jMenu5.add(modificar_Docente1);
+        jMenu5.add(listar_Clase);
 
-        eliminar_Docente1.setText("Eliminar");
-        eliminar_Docente1.addActionListener(new java.awt.event.ActionListener() {
+        modificar_Clase.setText("Modificar");
+        modificar_Clase.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                eliminar_Docente1ActionPerformed(evt);
+                modificar_ClaseActionPerformed(evt);
             }
         });
-        jMenu5.add(eliminar_Docente1);
+        jMenu5.add(modificar_Clase);
+
+        eliminar_Clase.setText("Eliminar");
+        eliminar_Clase.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eliminar_ClaseActionPerformed(evt);
+            }
+        });
+        jMenu5.add(eliminar_Clase);
 
         Clases.add(jMenu5);
 
@@ -723,6 +1101,8 @@ public class Principal extends javax.swing.JFrame {
             al.getPass()};
         DefaultTableModel t = (DefaultTableModel) jt_listarAlumnos.getModel();
         t.addRow(AlumnoNuevo);
+        DefaultTableModel e = (DefaultTableModel) jt_EliminarAlumnos.getModel();
+        e.addRow(AlumnoNuevo);
 
 
     }//GEN-LAST:event_agregar_AlumnoMouseClicked
@@ -766,8 +1146,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void modificar_AlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_AlumnosActionPerformed
         JOptionPane.showMessageDialog(this, "Ingrese la posicion que quiere modificar :");
-     
-        
+
         jd_ModificarAlumnos.setModal(true);
         jd_ModificarAlumnos.pack();
         jd_ModificarAlumnos.setLocationRelativeTo(this);
@@ -777,24 +1156,30 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_modificar_AlumnosActionPerformed
 
     private void modificar_DocenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_DocenteActionPerformed
-        // TODO add your handling code here:
+        jd_modificarDocente.setModal(true);
+        jd_modificarDocente.pack();
+        jd_modificarDocente.setLocationRelativeTo(this);
+        jd_modificarDocente.setVisible(true);
     }//GEN-LAST:event_modificar_DocenteActionPerformed
 
     private void eliminar_DocenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_DocenteActionPerformed
-        // TODO add your handling code here:
+        jd_EliminarDocente.setModal(true);
+        jd_EliminarDocente.pack();
+        jd_EliminarDocente.setLocationRelativeTo(this);
+        jd_EliminarDocente.setVisible(true);
     }//GEN-LAST:event_eliminar_DocenteActionPerformed
 
-    private void listar_Docente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listar_Docente1ActionPerformed
+    private void listar_ClaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listar_ClaseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_listar_Docente1ActionPerformed
+    }//GEN-LAST:event_listar_ClaseActionPerformed
 
-    private void modificar_Docente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_Docente1ActionPerformed
+    private void modificar_ClaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_ClaseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_modificar_Docente1ActionPerformed
+    }//GEN-LAST:event_modificar_ClaseActionPerformed
 
-    private void eliminar_Docente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_Docente1ActionPerformed
+    private void eliminar_ClaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_ClaseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_eliminar_Docente1ActionPerformed
+    }//GEN-LAST:event_eliminar_ClaseActionPerformed
 
     private void listar_Docente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listar_Docente2ActionPerformed
         // TODO add your handling code here:
@@ -805,7 +1190,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_modificar_Docente2ActionPerformed
 
     private void eliminar_Docente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_Docente2ActionPerformed
-     
+
     }//GEN-LAST:event_eliminar_Docente2ActionPerformed
 
     private void CrearDocenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrearDocenteActionPerformed
@@ -814,6 +1199,124 @@ public class Principal extends javax.swing.JFrame {
         jd_AgregarDocente.setLocationRelativeTo(this);
         jd_AgregarDocente.setVisible(true);
     }//GEN-LAST:event_CrearDocenteActionPerformed
+
+    private void agregar_DocenteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregar_DocenteMouseClicked
+        String nombre, apellido, titulo, posgrado, user, pass;
+        String facultad = "";
+        int numRegistro, impartidoClase;
+        nombre = nombre_Docente.getText();
+        apellido = apellido_Docente.getText();
+        titulo = titulo_Docente.getText();
+        posgrado = posgrado_Docente.getText();
+        user = user_Docente.getText();
+        pass = pass_Docente.getText();
+        if (salud_Alumno2.isSelected()) {
+            facultad = "Salud";
+        } else if (ingieneria_Alumno2.isSelected()) {
+            facultad = "Ingeniería";
+
+        } else if (licenciatura_Alumno2.isSelected()) {
+            facultad = "Licenciatura";
+        }
+
+        numRegistro = Integer.parseInt(registro_Docente.getText());
+        impartidoClase = Integer.parseInt(impartido_Docente.getText());
+
+        Docentes d = new Docentes(nombre, apellido, numRegistro, titulo, posgrado, impartidoClase, facultad, user, pass);
+        ad.getDocente().add(d);
+        try {
+            ad.escribirArchivo();
+        } catch (IOException ex) {
+            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        Docentes dc = new Docentes(nombre, apellido, numRegistro, titulo, posgrado, impartidoClase, facultad, user, pass);
+        Object[] DocenteNuevo = {dc.getNombre(), dc.getApellido(), dc.getNum_registro(), dc.getTitulo(), dc.getTitulo_posgrado(), dc.getImpartido_clase(), dc.getFacultad(), dc.getUser(), dc.getPass()};
+
+        DefaultTableModel t = (DefaultTableModel) jt_DocentesLista.getModel();
+        t.addRow(DocenteNuevo);
+
+
+    }//GEN-LAST:event_agregar_DocenteMouseClicked
+
+    private void listarDocentesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarDocentesActionPerformed
+
+        jd_ListarDocentes.setModal(true);
+        jd_ListarDocentes.pack();
+        jd_ListarDocentes.setLocationRelativeTo(this);
+        jd_ListarDocentes.setVisible(true);
+    }//GEN-LAST:event_listarDocentesActionPerformed
+
+    private void eliminar_DocentaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminar_DocentaMouseClicked
+
+        if (jt_EliminarDocente.getSelectedRow() >= 0) {
+            Object posi = jt_EliminarDocente.getValueAt(jt_EliminarDocente.getSelectedRow(), 4);
+
+            DefaultTableModel l = (DefaultTableModel) jt_EliminarDocente.getModel();
+            l.removeRow(jt_EliminarDocente.getSelectedRow());
+            for (int i = 0; i < ad.getDocente().size(); i++) {
+
+                ad.cargarArchivo();
+                ad.getDocente().remove(i);
+                try {
+                    ad.escribirArchivo();
+                } catch (IOException ex) {
+                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+
+            JOptionPane.showMessageDialog(null, "Se elimino el Docente");
+        } else {
+            JOptionPane.showMessageDialog(null, "Sucedio un error");
+        }
+        jd_EliminarDocente.setVisible(false);
+
+    }//GEN-LAST:event_eliminar_DocentaMouseClicked
+
+    private void agregar_ClaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agregar_ClaseActionPerformed
+        jd_AgregarClase.setModal(true);
+        jd_AgregarClase.pack();
+        jd_AgregarClase.setLocationRelativeTo(this);
+        jd_AgregarClase.setVisible(true);
+        
+        
+    }//GEN-LAST:event_agregar_ClaseActionPerformed
+
+    private void AgregarClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AgregarClaseMouseClicked
+        String nombre, seccion, codCarrera,user, pass;
+        int codigo, cantAl, numAu;
+        nombre = nombre_Clase.getText();
+        seccion = seccion_Clase.getText();
+        codCarrera = codigo_clase.getText();
+        user = user_clase.getText();
+        pass = pass_Clase.getText();
+        codigo = Integer.parseInt(codigo_clase.getText());
+        cantAl = Integer.parseInt(alumnos_Clase.getText());
+        numAu = Integer.parseInt(numAula_Clase.getText());
+        
+        Clases c = new Clases(nombre, seccion, codigo, codCarrera, cantAl, numAu, user, pass);
+        ac.getClases().add(c);
+        try {
+            ac.escribirArchivo();
+        } catch (IOException ex) {
+            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        nombre_Clase.setText("");
+        seccion_Clase.setText("");
+        codigo_clase.setText("");
+        user_clase.setText("");
+        pass_Clase.setText("");
+        codigo_clase.setText("");
+        alumnos_Clase.setText("");
+        numAula_Clase.setText("");
+        
+        Clases cl = new Clases(nombre, seccion, codigo, codCarrera, cantAl, numAu, user, pass);
+        Object[] ClaseNuevo = {cl.getNombre(), cl.getSeccion(), cl.getCodigo(), cl.getCodig_carrera(), cl.getCantidad_alumnos(), cl.getNum_aula(), cl.getUser(), cl.getPass()};
+    
+        
+        
+    }//GEN-LAST:event_AgregarClaseMouseClicked
 
     /**
      * @param args the command line arguments
@@ -851,6 +1354,7 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton AgregarClase;
     private javax.swing.JMenu Alumnos;
     private javax.swing.JMenu Clases;
     private javax.swing.JMenuItem CrearDocente;
@@ -861,23 +1365,32 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField acarrera_Alumno;
     private javax.swing.JTextField acarrera_Alumno1;
     private javax.swing.JButton agregar_Alumno;
+    private javax.swing.JMenuItem agregar_Clase;
+    private javax.swing.JButton agregar_Docente;
+    private javax.swing.JTextField alumnos_Clase;
     private javax.swing.JTextField apellido_Alumno;
     private javax.swing.JTextField apellido_Alumno1;
+    private javax.swing.JTextField apellido_Docente;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JTextField carrera_Alumno;
     private javax.swing.JTextField carrera_Alumno1;
+    private javax.swing.JTextField carrera_Clase;
+    private javax.swing.JTextField codigo_clase;
     private javax.swing.JMenuItem crear_Alumno;
     private javax.swing.JTextField edad_Alumno;
     private javax.swing.JTextField edad_Alumno1;
     private javax.swing.JButton eliminarAlumno;
     private javax.swing.JMenuItem eliminar_Alumnos;
+    private javax.swing.JMenuItem eliminar_Clase;
+    private javax.swing.JButton eliminar_Docenta;
     private javax.swing.JMenuItem eliminar_Docente;
-    private javax.swing.JMenuItem eliminar_Docente1;
     private javax.swing.JMenuItem eliminar_Docente2;
     private javax.swing.JTextField id_Alumno;
     private javax.swing.JTextField id_Alumno1;
+    private javax.swing.JTextField impartido_Docente;
     private javax.swing.JRadioButton ingieneria_Alumno;
     private javax.swing.JRadioButton ingieneria_Alumno1;
+    private javax.swing.JRadioButton ingieneria_Alumno2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -897,8 +1410,29 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -912,36 +1446,58 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JDialog jd_AgregarClase;
     private javax.swing.JDialog jd_AgregarDocente;
+    private javax.swing.JDialog jd_EliminarDocente;
     private javax.swing.JDialog jd_ListarAlumnos;
+    private javax.swing.JDialog jd_ListarDocentes;
     private javax.swing.JDialog jd_ModificarAlumnos;
     private javax.swing.JDialog jd_agregar_Alumnos;
     private javax.swing.JDialog jd_eliminarAlumno;
+    private javax.swing.JDialog jd_modificarDocente;
+    private javax.swing.JTable jt_DocentesLista;
     private javax.swing.JTable jt_EliminarAlumnos;
+    private javax.swing.JTable jt_EliminarDocente;
     private javax.swing.JTable jt_listarAlumnos;
     private javax.swing.JRadioButton licenciatura_Alumno;
     private javax.swing.JRadioButton licenciatura_Alumno1;
+    private javax.swing.JRadioButton licenciatura_Alumno2;
     private javax.swing.JMenuItem listarDocentes;
     private javax.swing.JMenuItem listar_Alumnos;
-    private javax.swing.JMenuItem listar_Docente1;
+    private javax.swing.JMenuItem listar_Clase;
     private javax.swing.JMenuItem listar_Docente2;
     private javax.swing.JMenuItem modificar_Alumnos;
+    private javax.swing.JMenuItem modificar_Clase;
     private javax.swing.JMenuItem modificar_Docente;
-    private javax.swing.JMenuItem modificar_Docente1;
     private javax.swing.JMenuItem modificar_Docente2;
     private javax.swing.JTextField nombre_Alumno;
     private javax.swing.JTextField nombre_Alumno1;
+    private javax.swing.JTextField nombre_Clase;
+    private javax.swing.JTextField nombre_Docente;
+    private javax.swing.JTextField numAula_Clase;
     private javax.swing.JTextField pass_Alumno;
     private javax.swing.JTextField pass_Alumno1;
+    private javax.swing.JTextField pass_Clase;
+    private javax.swing.JTextField pass_Docente;
+    private javax.swing.JTextField posgrado_Docente;
     private javax.swing.JTextField promedio_Alumno;
     private javax.swing.JTextField promedio_Alumno1;
     private javax.swing.JTextField registro_Alumno;
     private javax.swing.JTextField registro_Alumno1;
+    private javax.swing.JTextField registro_Docente;
     private javax.swing.JRadioButton salud_Alumno;
     private javax.swing.JRadioButton salud_Alumno1;
+    private javax.swing.JRadioButton salud_Alumno2;
+    private javax.swing.JTextField seccion_Clase;
+    private javax.swing.JTextField titulo_Docente;
     private javax.swing.JTextField user_Alumno;
     private javax.swing.JTextField user_Alumno1;
+    private javax.swing.JTextField user_Docente;
+    private javax.swing.JTextField user_clase;
     // End of variables declaration//GEN-END:variables
     admi_Alumnos aa = new admi_Alumnos("./Alumnos.txt");
-
+    admi_Docente ad = new admi_Docente("./Docente.txt");
+    admi_Clase ac = new admi_Clase("./Clase.txt");
 }
