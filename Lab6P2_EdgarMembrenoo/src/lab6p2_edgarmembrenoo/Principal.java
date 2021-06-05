@@ -150,9 +150,59 @@ public class Principal extends javax.swing.JFrame {
         user_clase = new javax.swing.JTextField();
         pass_Clase = new javax.swing.JTextField();
         AgregarClase = new javax.swing.JButton();
+        jd_ListarClase = new javax.swing.JDialog();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jt_listaClases = new javax.swing.JTable();
+        jLabel48 = new javax.swing.JLabel();
+        jd_EliminarClase = new javax.swing.JDialog();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jt_EliminarClase = new javax.swing.JTable();
+        eliminarClase = new javax.swing.JButton();
+        jLabel49 = new javax.swing.JLabel();
+        jd_AgregarProyecto = new javax.swing.JDialog();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        titulo_Proyecto = new javax.swing.JTextField();
+        descripcion_Proye = new javax.swing.JTextField();
+        puntuacion_Proyecto = new javax.swing.JTextField();
+        dificultad_Proyecto = new javax.swing.JTextField();
+        td_Proyecto = new javax.swing.JTextField();
+        participantes_Proyecto = new javax.swing.JTextField();
+        fecha_Proyecto = new javax.swing.JTextField();
+        user_Proyecto = new javax.swing.JTextField();
+        pass_Proye = new javax.swing.JTextField();
+        agregar_Proyecto = new javax.swing.JButton();
+        jd_ListaProyecto = new javax.swing.JDialog();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jt_listar_Proye = new javax.swing.JTable();
+        jLabel60 = new javax.swing.JLabel();
+        jd_EliminarProye = new javax.swing.JDialog();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jt_eliminarProye = new javax.swing.JTable();
+        jLabel61 = new javax.swing.JLabel();
+        eliminarProye = new javax.swing.JButton();
+        jd_Login = new javax.swing.JDialog();
+        user_Admin1 = new javax.swing.JTextField();
+        pass_Admin1 = new javax.swing.JPasswordField();
+        ingresar_Admin1 = new javax.swing.JButton();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        pass_Admin = new javax.swing.JPasswordField();
+        user_Admin = new javax.swing.JTextField();
+        ingresar_Admin = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         Login = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         Alumnos = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
         crear_Alumno = new javax.swing.JMenuItem();
@@ -169,13 +219,14 @@ public class Principal extends javax.swing.JFrame {
         jMenu5 = new javax.swing.JMenu();
         agregar_Clase = new javax.swing.JMenuItem();
         listar_Clase = new javax.swing.JMenuItem();
-        modificar_Clase = new javax.swing.JMenuItem();
         eliminar_Clase = new javax.swing.JMenuItem();
+        modificar_Clase = new javax.swing.JMenuItem();
         Proyectos = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
-        listar_Docente2 = new javax.swing.JMenuItem();
-        modificar_Docente2 = new javax.swing.JMenuItem();
-        eliminar_Docente2 = new javax.swing.JMenuItem();
+        agergar_Proyecto = new javax.swing.JMenuItem();
+        listar_Proye = new javax.swing.JMenuItem();
+        eliminar_Proye = new javax.swing.JMenuItem();
+        modificar_Proye = new javax.swing.JMenuItem();
 
         jLabel1.setText("Nombre");
 
@@ -872,12 +923,361 @@ public class Principal extends javax.swing.JFrame {
                 .addContainerGap(66, Short.MAX_VALUE))
         );
 
+        jt_listaClases.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Seccion", "Codigo", "Codigo Carrera", "Cant Alumnos", "Num Aula", "User", "Pass"
+            }
+        ));
+        jScrollPane5.setViewportView(jt_listaClases);
+
+        jLabel48.setFont(new java.awt.Font("Malayalam MN", 1, 24)); // NOI18N
+        jLabel48.setText("Lista de Clases");
+
+        javax.swing.GroupLayout jd_ListarClaseLayout = new javax.swing.GroupLayout(jd_ListarClase.getContentPane());
+        jd_ListarClase.getContentPane().setLayout(jd_ListarClaseLayout);
+        jd_ListarClaseLayout.setHorizontalGroup(
+            jd_ListarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_ListarClaseLayout.createSequentialGroup()
+                .addGroup(jd_ListarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_ListarClaseLayout.createSequentialGroup()
+                        .addGap(301, 301, 301)
+                        .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jd_ListarClaseLayout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 668, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(71, Short.MAX_VALUE))
+        );
+        jd_ListarClaseLayout.setVerticalGroup(
+            jd_ListarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_ListarClaseLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addComponent(jLabel48)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(73, Short.MAX_VALUE))
+        );
+
+        jt_EliminarClase.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nombre", "Seccion", "Codigo", "Codigo Carrera", "Cant Alumnos", "Num Aula", "User", "Pass"
+            }
+        ));
+        jScrollPane6.setViewportView(jt_EliminarClase);
+
+        eliminarClase.setText("Eliminar");
+        eliminarClase.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                eliminarClaseMouseClicked(evt);
+            }
+        });
+
+        jLabel49.setText("Eliminar Clase");
+
+        javax.swing.GroupLayout jd_EliminarClaseLayout = new javax.swing.GroupLayout(jd_EliminarClase.getContentPane());
+        jd_EliminarClase.getContentPane().setLayout(jd_EliminarClaseLayout);
+        jd_EliminarClaseLayout.setHorizontalGroup(
+            jd_EliminarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_EliminarClaseLayout.createSequentialGroup()
+                .addContainerGap(75, Short.MAX_VALUE)
+                .addGroup(jd_EliminarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(eliminarClase)
+                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 668, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(74, 74, 74))
+            .addGroup(jd_EliminarClaseLayout.createSequentialGroup()
+                .addGap(355, 355, 355)
+                .addComponent(jLabel49)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jd_EliminarClaseLayout.setVerticalGroup(
+            jd_EliminarClaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_EliminarClaseLayout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addComponent(jLabel49)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(eliminarClase)
+                .addContainerGap(27, Short.MAX_VALUE))
+        );
+
+        jLabel50.setFont(new java.awt.Font("Malayalam MN", 2, 24)); // NOI18N
+        jLabel50.setText("Agregar Proyecto");
+
+        jLabel51.setText("Titulo");
+
+        jLabel52.setText("Descripcion");
+
+        jLabel53.setText("Puntuacion");
+
+        jLabel54.setText("Dificultad");
+
+        jLabel55.setText("Tiempo Duracion");
+
+        jLabel56.setText("Cntidad Participante");
+
+        jLabel57.setText("Fecha");
+
+        jLabel58.setText("User");
+
+        jLabel59.setText("Pass");
+
+        agregar_Proyecto.setText("Agregar");
+        agregar_Proyecto.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                agregar_ProyectoMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_AgregarProyectoLayout = new javax.swing.GroupLayout(jd_AgregarProyecto.getContentPane());
+        jd_AgregarProyecto.getContentPane().setLayout(jd_AgregarProyectoLayout);
+        jd_AgregarProyectoLayout.setHorizontalGroup(
+            jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_AgregarProyectoLayout.createSequentialGroup()
+                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_AgregarProyectoLayout.createSequentialGroup()
+                        .addGap(314, 314, 314)
+                        .addComponent(jLabel50))
+                    .addGroup(jd_AgregarProyectoLayout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(agregar_Proyecto)
+                            .addGroup(jd_AgregarProyectoLayout.createSequentialGroup()
+                                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel52)
+                                    .addComponent(jLabel51)
+                                    .addComponent(jLabel53)
+                                    .addComponent(jLabel54)
+                                    .addComponent(jLabel55)
+                                    .addComponent(jLabel56)
+                                    .addComponent(jLabel57)
+                                    .addComponent(jLabel58)
+                                    .addComponent(jLabel59))
+                                .addGap(157, 157, 157)
+                                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(titulo_Proyecto, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+                                    .addComponent(descripcion_Proye)
+                                    .addComponent(puntuacion_Proyecto)
+                                    .addComponent(dificultad_Proyecto)
+                                    .addComponent(td_Proyecto)
+                                    .addComponent(participantes_Proyecto)
+                                    .addComponent(fecha_Proyecto)
+                                    .addComponent(user_Proyecto)
+                                    .addComponent(pass_Proye))))))
+                .addContainerGap(246, Short.MAX_VALUE))
+        );
+        jd_AgregarProyectoLayout.setVerticalGroup(
+            jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_AgregarProyectoLayout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabel50)
+                .addGap(29, 29, 29)
+                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel51)
+                    .addComponent(titulo_Proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel52)
+                    .addComponent(descripcion_Proye, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel53)
+                    .addComponent(puntuacion_Proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel54)
+                    .addComponent(dificultad_Proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel55)
+                    .addComponent(td_Proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel56)
+                    .addComponent(participantes_Proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel57)
+                    .addComponent(fecha_Proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel58)
+                    .addComponent(user_Proyecto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jd_AgregarProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel59)
+                    .addComponent(pass_Proye, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                .addComponent(agregar_Proyecto)
+                .addGap(49, 49, 49))
+        );
+
+        jt_listar_Proye.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Titulo", "Descripcion", "Puntuacion", "Dificultad", "Tiempo", "Cant Prticipantes", "fecha", "User", "Password"
+            }
+        ));
+        jScrollPane7.setViewportView(jt_listar_Proye);
+
+        jLabel60.setFont(new java.awt.Font("Lucida Sans Typewriter", 1, 24)); // NOI18N
+        jLabel60.setText("Lista Proyectos");
+
+        javax.swing.GroupLayout jd_ListaProyectoLayout = new javax.swing.GroupLayout(jd_ListaProyecto.getContentPane());
+        jd_ListaProyecto.getContentPane().setLayout(jd_ListaProyectoLayout);
+        jd_ListaProyectoLayout.setHorizontalGroup(
+            jd_ListaProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_ListaProyectoLayout.createSequentialGroup()
+                .addGroup(jd_ListaProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_ListaProyectoLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 779, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jd_ListaProyectoLayout.createSequentialGroup()
+                        .addGap(287, 287, 287)
+                        .addComponent(jLabel60)))
+                .addContainerGap(42, Short.MAX_VALUE))
+        );
+        jd_ListaProyectoLayout.setVerticalGroup(
+            jd_ListaProyectoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_ListaProyectoLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addComponent(jLabel60)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(74, 74, 74))
+        );
+
+        jt_eliminarProye.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Titulo", "Descripcion", "Puntuacion", "Dificultad", "Tiempo", "Cant Prticipantes", "fecha", "User", "Password"
+            }
+        ));
+        jScrollPane8.setViewportView(jt_eliminarProye);
+
+        jLabel61.setText("Eliminar Proyectos");
+
+        eliminarProye.setText("Eliminar");
+        eliminarProye.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                eliminarProyeMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jd_EliminarProyeLayout = new javax.swing.GroupLayout(jd_EliminarProye.getContentPane());
+        jd_EliminarProye.getContentPane().setLayout(jd_EliminarProyeLayout);
+        jd_EliminarProyeLayout.setHorizontalGroup(
+            jd_EliminarProyeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_EliminarProyeLayout.createSequentialGroup()
+                .addGroup(jd_EliminarProyeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_EliminarProyeLayout.createSequentialGroup()
+                        .addGap(342, 342, 342)
+                        .addComponent(jLabel61))
+                    .addGroup(jd_EliminarProyeLayout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 779, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(49, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_EliminarProyeLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(eliminarProye)
+                .addGap(78, 78, 78))
+        );
+        jd_EliminarProyeLayout.setVerticalGroup(
+            jd_EliminarProyeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_EliminarProyeLayout.createSequentialGroup()
+                .addGap(58, 58, 58)
+                .addComponent(jLabel61)
+                .addGap(36, 36, 36)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(eliminarProye)
+                .addContainerGap(41, Short.MAX_VALUE))
+        );
+
+        ingresar_Admin1.setText("Ingresar");
+        ingresar_Admin1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ingresar_Admin1MouseClicked(evt);
+            }
+        });
+        ingresar_Admin1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ingresar_Admin1ActionPerformed(evt);
+            }
+        });
+
+        jLabel63.setText("Login Persona");
+
+        javax.swing.GroupLayout jd_LoginLayout = new javax.swing.GroupLayout(jd_Login.getContentPane());
+        jd_Login.getContentPane().setLayout(jd_LoginLayout);
+        jd_LoginLayout.setHorizontalGroup(
+            jd_LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_LoginLayout.createSequentialGroup()
+                .addContainerGap(259, Short.MAX_VALUE)
+                .addGroup(jd_LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jd_LoginLayout.createSequentialGroup()
+                        .addGroup(jd_LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pass_Admin1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(user_Admin1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jd_LoginLayout.createSequentialGroup()
+                        .addGap(286, 286, 286)
+                        .addComponent(ingresar_Admin1)))
+                .addGap(143, 143, 143))
+            .addGroup(jd_LoginLayout.createSequentialGroup()
+                .addGap(318, 318, 318)
+                .addComponent(jLabel63)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jd_LoginLayout.setVerticalGroup(
+            jd_LoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jd_LoginLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel63)
+                .addGap(81, 81, 81)
+                .addComponent(user_Admin1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(90, 90, 90)
+                .addComponent(pass_Admin1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
+                .addComponent(ingresar_Admin1)
+                .addGap(80, 80, 80))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel62.setText("Login Admin");
+
+        ingresar_Admin.setText("Ingresar");
+        ingresar_Admin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ingresar_AdminMouseClicked(evt);
+            }
+        });
 
         Login.setText("Login");
 
-        jMenuItem1.setText("Login");
+        jMenuItem1.setText("Login Alumno");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         Login.add(jMenuItem1);
+
+        jMenuItem2.setText("Login Maestro");
+        Login.add(jMenuItem2);
+
+        jMenuItem3.setText("Logout");
+        Login.add(jMenuItem3);
 
         jMenuBar1.add(Login);
 
@@ -942,6 +1342,7 @@ public class Principal extends javax.swing.JFrame {
         jMenu4.add(listarDocentes);
 
         modificar_Docente.setText("Modificar");
+        modificar_Docente.setEnabled(false);
         modificar_Docente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 modificar_DocenteActionPerformed(evt);
@@ -981,14 +1382,6 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu5.add(listar_Clase);
 
-        modificar_Clase.setText("Modificar");
-        modificar_Clase.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                modificar_ClaseActionPerformed(evt);
-            }
-        });
-        jMenu5.add(modificar_Clase);
-
         eliminar_Clase.setText("Eliminar");
         eliminar_Clase.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -996,6 +1389,14 @@ public class Principal extends javax.swing.JFrame {
             }
         });
         jMenu5.add(eliminar_Clase);
+
+        modificar_Clase.setText("Modificar");
+        modificar_Clase.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modificar_ClaseActionPerformed(evt);
+            }
+        });
+        jMenu5.add(modificar_Clase);
 
         Clases.add(jMenu5);
 
@@ -1005,29 +1406,37 @@ public class Principal extends javax.swing.JFrame {
 
         jMenu6.setText("Opciones");
 
-        listar_Docente2.setText("Listar");
-        listar_Docente2.addActionListener(new java.awt.event.ActionListener() {
+        agergar_Proyecto.setText("Agregar");
+        agergar_Proyecto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                listar_Docente2ActionPerformed(evt);
+                agergar_ProyectoActionPerformed(evt);
             }
         });
-        jMenu6.add(listar_Docente2);
+        jMenu6.add(agergar_Proyecto);
 
-        modificar_Docente2.setText("Modificar");
-        modificar_Docente2.addActionListener(new java.awt.event.ActionListener() {
+        listar_Proye.setText("Listar");
+        listar_Proye.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                modificar_Docente2ActionPerformed(evt);
+                listar_ProyeActionPerformed(evt);
             }
         });
-        jMenu6.add(modificar_Docente2);
+        jMenu6.add(listar_Proye);
 
-        eliminar_Docente2.setText("Eliminar");
-        eliminar_Docente2.addActionListener(new java.awt.event.ActionListener() {
+        eliminar_Proye.setText("Eliminar");
+        eliminar_Proye.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                eliminar_Docente2ActionPerformed(evt);
+                eliminar_ProyeActionPerformed(evt);
             }
         });
-        jMenu6.add(eliminar_Docente2);
+        jMenu6.add(eliminar_Proye);
+
+        modificar_Proye.setText("Modificar");
+        modificar_Proye.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modificar_ProyeActionPerformed(evt);
+            }
+        });
+        jMenu6.add(modificar_Proye);
 
         Proyectos.add(jMenu6);
 
@@ -1039,11 +1448,34 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 772, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(324, 324, 324)
+                        .addComponent(jLabel62))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(272, 272, 272)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pass_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(user_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(309, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(ingresar_Admin)
+                .addGap(133, 133, 133))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 485, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jLabel62)
+                .addGap(86, 86, 86)
+                .addComponent(user_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(90, 90, 90)
+                .addComponent(pass_Admin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
+                .addComponent(ingresar_Admin)
+                .addGap(77, 77, 77))
         );
 
         pack();
@@ -1057,77 +1489,90 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_crear_AlumnoActionPerformed
 
     private void agregar_AlumnoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregar_AlumnoMouseClicked
-        String nombre, apellido, carrera, promedio, user, pass;
-        String facultad = "";
-        int edad, registro, id, acarrera;
-        nombre = nombre_Alumno.getText();
-        apellido = apellido_Alumno.getText();
-        carrera = carrera_Alumno.getText();
-        promedio = promedio_Alumno.getText();
-        user = user_Alumno.getText();
-        pass = pass_Alumno.getText();
-        if (salud_Alumno.isSelected()) {
-            facultad = "Salud";
-        } else if (ingieneria_Alumno.isSelected()) {
-            facultad = "Ingeniería";
-
-        } else if (licenciatura_Alumno.isSelected()) {
-            facultad = "Licenciatura";
-        }
-        edad = Integer.parseInt(edad_Alumno.getText());
-        registro = Integer.parseInt(registro_Alumno.getText());
-        id = Integer.parseInt(id_Alumno.getText());
-        acarrera = Integer.parseInt(acarrera_Alumno.getText());
-        Alumnos a = new Alumnos(nombre, apellido, edad, registro, id, carrera, acarrera, promedio, facultad, user, pass);
-        aa.getAlumno().add(a);
         try {
-            aa.escribirArchivo();
-        } catch (IOException ex) {
-            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        nombre_Alumno.setText("");
-        apellido_Alumno.setText("");
-        carrera_Alumno.setText("");
-        promedio_Alumno.setText("");
-        user_Alumno.setText("");
-        pass_Alumno.setText("");
-        edad_Alumno.setText("");
-        registro_Alumno.setText("");
-        id_Alumno.setText("");
-        acarrera_Alumno.setText("");
+            String nombre, apellido, carrera, promedio, user, pass;
+            String facultad = "";
+            int edad, registro, id, acarrera;
+            nombre = nombre_Alumno.getText();
+            apellido = apellido_Alumno.getText();
+            carrera = carrera_Alumno.getText();
+            promedio = promedio_Alumno.getText();
+            user = user_Alumno.getText();
+            pass = pass_Alumno.getText();
+            if (salud_Alumno.isSelected()) {
+                facultad = "Salud";
+            } else if (ingieneria_Alumno.isSelected()) {
+                facultad = "Ingeniería";
 
-        Alumnos al = new Alumnos(nombre, apellido, edad, registro, id, carrera, acarrera, promedio, facultad, user, pass);
-        Object[] AlumnoNuevo = {al.getNombre(), al.getApellido(), al.getEdad(), al.getNum_registro(), al.getId(), al.getCarrera(), al.getAño_carrera(), al.getPromedio(), al.getFacultad(), al.getUser(),
-            al.getPass()};
-        DefaultTableModel t = (DefaultTableModel) jt_listarAlumnos.getModel();
-        t.addRow(AlumnoNuevo);
-        DefaultTableModel e = (DefaultTableModel) jt_EliminarAlumnos.getModel();
-        e.addRow(AlumnoNuevo);
+            } else if (licenciatura_Alumno.isSelected()) {
+                facultad = "Licenciatura";
+            }
+            edad = Integer.parseInt(edad_Alumno.getText());
+            registro = Integer.parseInt(registro_Alumno.getText());
+            id = Integer.parseInt(id_Alumno.getText());
+            acarrera = Integer.parseInt(acarrera_Alumno.getText());
+            Alumnos a = new Alumnos(nombre, apellido, edad, registro, id, carrera, acarrera, promedio, facultad, user, pass);
+            aa.getAlumno().add(a);
+            try {
+                aa.escribirArchivo();
+            } catch (IOException ex) {
+                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            nombre_Alumno.setText("");
+            apellido_Alumno.setText("");
+            carrera_Alumno.setText("");
+            promedio_Alumno.setText("");
+            user_Alumno.setText("");
+            pass_Alumno.setText("");
+            edad_Alumno.setText("");
+            registro_Alumno.setText("");
+            id_Alumno.setText("");
+            acarrera_Alumno.setText("");
+
+            Alumnos al = new Alumnos(nombre, apellido, edad, registro, id, carrera, acarrera, promedio, facultad, user, pass);
+            Object[] AlumnoNuevo = {al.getNombre(), al.getApellido(), al.getEdad(), al.getNum_registro(), al.getId(), al.getCarrera(), al.getAño_carrera(), al.getPromedio(), al.getFacultad(), al.getUser(),
+                al.getPass()};
+            DefaultTableModel t = (DefaultTableModel) jt_listarAlumnos.getModel();
+            t.addRow(AlumnoNuevo);
+            DefaultTableModel e = (DefaultTableModel) jt_EliminarAlumnos.getModel();
+            e.addRow(AlumnoNuevo);
+            jd_agregar_Alumnos.setVisible(false);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
 
 
     }//GEN-LAST:event_agregar_AlumnoMouseClicked
 
     private void eliminarAlumnoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarAlumnoMouseClicked
-        if (jt_EliminarAlumnos.getSelectedRow() >= 0) {
-            Object posi = jt_EliminarAlumnos.getValueAt(jt_EliminarAlumnos.getSelectedRow(), 4);
+        try {
+            if (jt_EliminarAlumnos.getSelectedRow() >= 0) {
+                Object posi = jt_EliminarAlumnos.getValueAt(jt_EliminarAlumnos.getSelectedRow(), 4);
 
-            DefaultTableModel l = (DefaultTableModel) jt_EliminarAlumnos.getModel();
-            l.removeRow(jt_EliminarAlumnos.getSelectedRow());
-            for (int i = 0; i < aa.getAlumno().size(); i++) {
+                DefaultTableModel l = (DefaultTableModel) jt_EliminarAlumnos.getModel();
+                l.removeRow(jt_EliminarAlumnos.getSelectedRow());
+                for (int i = 0; i < aa.getAlumno().size(); i++) {
 
-                aa.cargarArchivo();
-                aa.getAlumno().remove(i);
-                try {
-                    aa.escribirArchivo();
-                } catch (IOException ex) {
-                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                    aa.cargarArchivo();
+                    aa.getAlumno().remove(i);
+                    try {
+                        aa.escribirArchivo();
+                    } catch (IOException ex) {
+                        Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                 }
-            }
 
-            JOptionPane.showMessageDialog(null, "Se elimino el Alumno");
-        } else {
-            JOptionPane.showMessageDialog(null, "Sucedio un error");
+                JOptionPane.showMessageDialog(null, "Se elimino el Alumno");
+            } else {
+                JOptionPane.showMessageDialog(null, "Sucedio un error");
+            }
+            jt_EliminarAlumnos.setVisible(false);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
         }
+
     }//GEN-LAST:event_eliminarAlumnoMouseClicked
 
     private void listar_AlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listar_AlumnosActionPerformed
@@ -1170,7 +1615,10 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_eliminar_DocenteActionPerformed
 
     private void listar_ClaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listar_ClaseActionPerformed
-        // TODO add your handling code here:
+        jd_ListarClase.setModal(true);
+        jd_ListarClase.pack();
+        jd_ListarClase.setLocationRelativeTo(this);
+        jd_ListarClase.setVisible(true);
     }//GEN-LAST:event_listar_ClaseActionPerformed
 
     private void modificar_ClaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_ClaseActionPerformed
@@ -1178,20 +1626,29 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_modificar_ClaseActionPerformed
 
     private void eliminar_ClaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_ClaseActionPerformed
-        // TODO add your handling code here:
+        jd_EliminarClase.setModal(true);
+        jd_EliminarClase.pack();
+        jd_EliminarClase.setLocationRelativeTo(this);
+        jd_EliminarClase.setVisible(true);
     }//GEN-LAST:event_eliminar_ClaseActionPerformed
 
-    private void listar_Docente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listar_Docente2ActionPerformed
+    private void listar_ProyeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listar_ProyeActionPerformed
+        jd_ListaProyecto.setModal(true);
+        jd_ListaProyecto.pack();
+        jd_ListaProyecto.setLocationRelativeTo(this);
+        jd_ListaProyecto.setVisible(true);
+    }//GEN-LAST:event_listar_ProyeActionPerformed
+
+    private void modificar_ProyeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_ProyeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_listar_Docente2ActionPerformed
+    }//GEN-LAST:event_modificar_ProyeActionPerformed
 
-    private void modificar_Docente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificar_Docente2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_modificar_Docente2ActionPerformed
-
-    private void eliminar_Docente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_Docente2ActionPerformed
-
-    }//GEN-LAST:event_eliminar_Docente2ActionPerformed
+    private void eliminar_ProyeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminar_ProyeActionPerformed
+        jd_EliminarProye.setModal(true);
+        jd_EliminarProye.pack();
+        jd_EliminarProye.setLocationRelativeTo(this);
+        jd_EliminarProye.setVisible(true);
+    }//GEN-LAST:event_eliminar_ProyeActionPerformed
 
     private void CrearDocenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CrearDocenteActionPerformed
         jd_AgregarDocente.setModal(true);
@@ -1201,40 +1658,46 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_CrearDocenteActionPerformed
 
     private void agregar_DocenteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregar_DocenteMouseClicked
-        String nombre, apellido, titulo, posgrado, user, pass;
-        String facultad = "";
-        int numRegistro, impartidoClase;
-        nombre = nombre_Docente.getText();
-        apellido = apellido_Docente.getText();
-        titulo = titulo_Docente.getText();
-        posgrado = posgrado_Docente.getText();
-        user = user_Docente.getText();
-        pass = pass_Docente.getText();
-        if (salud_Alumno2.isSelected()) {
-            facultad = "Salud";
-        } else if (ingieneria_Alumno2.isSelected()) {
-            facultad = "Ingeniería";
-
-        } else if (licenciatura_Alumno2.isSelected()) {
-            facultad = "Licenciatura";
-        }
-
-        numRegistro = Integer.parseInt(registro_Docente.getText());
-        impartidoClase = Integer.parseInt(impartido_Docente.getText());
-
-        Docentes d = new Docentes(nombre, apellido, numRegistro, titulo, posgrado, impartidoClase, facultad, user, pass);
-        ad.getDocente().add(d);
         try {
-            ad.escribirArchivo();
-        } catch (IOException ex) {
-            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            String nombre, apellido, titulo, posgrado, user, pass;
+            String facultad = "";
+            int numRegistro, impartidoClase;
+            nombre = nombre_Docente.getText();
+            apellido = apellido_Docente.getText();
+            titulo = titulo_Docente.getText();
+            posgrado = posgrado_Docente.getText();
+            user = user_Docente.getText();
+            pass = pass_Docente.getText();
+            if (salud_Alumno2.isSelected()) {
+                facultad = "Salud";
+            } else if (ingieneria_Alumno2.isSelected()) {
+                facultad = "Ingeniería";
+
+            } else if (licenciatura_Alumno2.isSelected()) {
+                facultad = "Licenciatura";
+            }
+
+            numRegistro = Integer.parseInt(registro_Docente.getText());
+            impartidoClase = Integer.parseInt(impartido_Docente.getText());
+
+            Docentes d = new Docentes(nombre, apellido, numRegistro, titulo, posgrado, impartidoClase, facultad, user, pass);
+            ad.getDocente().add(d);
+            try {
+                ad.escribirArchivo();
+            } catch (IOException ex) {
+                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            Docentes dc = new Docentes(nombre, apellido, numRegistro, titulo, posgrado, impartidoClase, facultad, user, pass);
+            Object[] DocenteNuevo = {dc.getNombre(), dc.getApellido(), dc.getNum_registro(), dc.getTitulo(), dc.getTitulo_posgrado(), dc.getImpartido_clase(), dc.getFacultad(), dc.getUser(), dc.getPass()};
+
+            DefaultTableModel t = (DefaultTableModel) jt_DocentesLista.getModel();
+            t.addRow(DocenteNuevo);
+            jd_AgregarDocente.setVisible(false);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
         }
-
-        Docentes dc = new Docentes(nombre, apellido, numRegistro, titulo, posgrado, impartidoClase, facultad, user, pass);
-        Object[] DocenteNuevo = {dc.getNombre(), dc.getApellido(), dc.getNum_registro(), dc.getTitulo(), dc.getTitulo_posgrado(), dc.getImpartido_clase(), dc.getFacultad(), dc.getUser(), dc.getPass()};
-
-        DefaultTableModel t = (DefaultTableModel) jt_DocentesLista.getModel();
-        t.addRow(DocenteNuevo);
 
 
     }//GEN-LAST:event_agregar_DocenteMouseClicked
@@ -1248,28 +1711,32 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_listarDocentesActionPerformed
 
     private void eliminar_DocentaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminar_DocentaMouseClicked
+        try {
+            if (jt_EliminarDocente.getSelectedRow() >= 0) {
+                Object posi = jt_EliminarDocente.getValueAt(jt_EliminarDocente.getSelectedRow(), 4);
 
-        if (jt_EliminarDocente.getSelectedRow() >= 0) {
-            Object posi = jt_EliminarDocente.getValueAt(jt_EliminarDocente.getSelectedRow(), 4);
+                DefaultTableModel l = (DefaultTableModel) jt_EliminarDocente.getModel();
+                l.removeRow(jt_EliminarDocente.getSelectedRow());
+                for (int i = 0; i < ad.getDocente().size(); i++) {
 
-            DefaultTableModel l = (DefaultTableModel) jt_EliminarDocente.getModel();
-            l.removeRow(jt_EliminarDocente.getSelectedRow());
-            for (int i = 0; i < ad.getDocente().size(); i++) {
-
-                ad.cargarArchivo();
-                ad.getDocente().remove(i);
-                try {
-                    ad.escribirArchivo();
-                } catch (IOException ex) {
-                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                    ad.cargarArchivo();
+                    ad.getDocente().remove(i);
+                    try {
+                        ad.escribirArchivo();
+                    } catch (IOException ex) {
+                        Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                 }
-            }
 
-            JOptionPane.showMessageDialog(null, "Se elimino el Docente");
-        } else {
-            JOptionPane.showMessageDialog(null, "Sucedio un error");
+                JOptionPane.showMessageDialog(null, "Se elimino el Docente");
+            } else {
+                JOptionPane.showMessageDialog(null, "Sucedio un error");
+            }
+            jd_EliminarDocente.setVisible(false);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
         }
-        jd_EliminarDocente.setVisible(false);
 
     }//GEN-LAST:event_eliminar_DocentaMouseClicked
 
@@ -1278,45 +1745,204 @@ public class Principal extends javax.swing.JFrame {
         jd_AgregarClase.pack();
         jd_AgregarClase.setLocationRelativeTo(this);
         jd_AgregarClase.setVisible(true);
-        
-        
+
+
     }//GEN-LAST:event_agregar_ClaseActionPerformed
 
     private void AgregarClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AgregarClaseMouseClicked
-        String nombre, seccion, codCarrera,user, pass;
-        int codigo, cantAl, numAu;
-        nombre = nombre_Clase.getText();
-        seccion = seccion_Clase.getText();
-        codCarrera = codigo_clase.getText();
-        user = user_clase.getText();
-        pass = pass_Clase.getText();
-        codigo = Integer.parseInt(codigo_clase.getText());
-        cantAl = Integer.parseInt(alumnos_Clase.getText());
-        numAu = Integer.parseInt(numAula_Clase.getText());
-        
-        Clases c = new Clases(nombre, seccion, codigo, codCarrera, cantAl, numAu, user, pass);
-        ac.getClases().add(c);
         try {
-            ac.escribirArchivo();
-        } catch (IOException ex) {
-            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            String nombre, seccion, codCarrera, user, pass;
+            int codigo, cantAl, numAu;
+            nombre = nombre_Clase.getText();
+            seccion = seccion_Clase.getText();
+            codCarrera = codigo_clase.getText();
+            user = user_clase.getText();
+            pass = pass_Clase.getText();
+            codigo = Integer.parseInt(codigo_clase.getText());
+            cantAl = Integer.parseInt(alumnos_Clase.getText());
+            numAu = Integer.parseInt(numAula_Clase.getText());
+
+            Clases c = new Clases(nombre, seccion, codigo, codCarrera, cantAl, numAu, user, pass);
+            ac.getClases().add(c);
+            try {
+                ac.escribirArchivo();
+            } catch (IOException ex) {
+                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            nombre_Clase.setText("");
+            seccion_Clase.setText("");
+            codigo_clase.setText("");
+            user_clase.setText("");
+            pass_Clase.setText("");
+            codigo_clase.setText("");
+            alumnos_Clase.setText("");
+            numAula_Clase.setText("");
+
+            Clases cl = new Clases(nombre, seccion, codigo, codCarrera, cantAl, numAu, user, pass);
+            Object[] ClaseNuevo = {cl.getNombre(), cl.getSeccion(), cl.getCodigo(), cl.getCodig_carrera(), cl.getCantidad_alumnos(), cl.getNum_aula(), cl.getUser(), cl.getPass()};
+            DefaultTableModel t = (DefaultTableModel) jt_listaClases.getModel();
+            t.addRow(ClaseNuevo);
+            DefaultTableModel e = (DefaultTableModel) jt_EliminarClase.getModel();
+            e.addRow(ClaseNuevo);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
         }
-        
-        nombre_Clase.setText("");
-        seccion_Clase.setText("");
-        codigo_clase.setText("");
-        user_clase.setText("");
-        pass_Clase.setText("");
-        codigo_clase.setText("");
-        alumnos_Clase.setText("");
-        numAula_Clase.setText("");
-        
-        Clases cl = new Clases(nombre, seccion, codigo, codCarrera, cantAl, numAu, user, pass);
-        Object[] ClaseNuevo = {cl.getNombre(), cl.getSeccion(), cl.getCodigo(), cl.getCodig_carrera(), cl.getCantidad_alumnos(), cl.getNum_aula(), cl.getUser(), cl.getPass()};
-    
-        
-        
+
+
     }//GEN-LAST:event_AgregarClaseMouseClicked
+
+    private void agregar_ProyectoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregar_ProyectoMouseClicked
+        try {
+            String titulo, descrip, tiempo, fecha, user, pass;
+            int puntuacion, dificultad, participantes;
+
+            titulo = titulo_Proyecto.getText();
+            descrip = descripcion_Proye.getText();
+            tiempo = td_Proyecto.getText();
+            fecha = fecha_Proyecto.getText();
+            user = user_clase.getText();
+            pass = pass_Clase.getText();
+            puntuacion = Integer.parseInt(puntuacion_Proyecto.getText());
+            dificultad = Integer.parseInt(user_clase.getText());
+            participantes = Integer.parseInt(participantes_Proyecto.getText());
+
+            Proyecto p = new Proyecto(titulo, descrip, puntuacion, dificultad, tiempo, participantes, fecha, user, pass);
+            ap.getProyecto().add(p);
+            try {
+                ap.escribirArchivo();
+            } catch (IOException ex) {
+                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            titulo_Proyecto.setText("");
+            descripcion_Proye.setText("");
+            td_Proyecto.setText("");
+            fecha_Proyecto.setText("");
+            user_clase.setText("");
+            pass_Clase.setText("");
+            puntuacion_Proyecto.setText("");
+            user_clase.setText("");
+            participantes_Proyecto.setText("");
+
+            Proyecto pr = new Proyecto(titulo, descrip, puntuacion, dificultad, tiempo, participantes, fecha, user, pass);
+            Object[] ProyectoNuevo = {pr.getTitulo(), pr.getDescrip(), pr.getPuntuacion(), pr.getDifivultad(), pr.getTiempo_duracion(), pr.getCantParticipantes(), pr.getFecha(), pr.getUser(), pr.getPass()};
+            DefaultTableModel t = (DefaultTableModel) jt_listar_Proye.getModel();
+            t.addRow(ProyectoNuevo);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+
+
+    }//GEN-LAST:event_agregar_ProyectoMouseClicked
+
+    private void eliminarProyeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarProyeMouseClicked
+        try {
+            if (jt_eliminarProye.getSelectedRow() >= 0) {
+                Object posi = jt_eliminarProye.getValueAt(jt_eliminarProye.getSelectedRow(), 4);
+
+                DefaultTableModel l = (DefaultTableModel) jt_eliminarProye.getModel();
+                l.removeRow(jt_eliminarProye.getSelectedRow());
+                for (int i = 0; i < ap.getProyecto().size(); i++) {
+
+                    ap.cargarArchivo();
+                    ap.getProyecto().remove(i);
+                    try {
+                        ap.escribirArchivo();
+                    } catch (IOException ex) {
+                        Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+
+                JOptionPane.showMessageDialog(null, "Se elimino el Proyecto");
+            } else {
+                JOptionPane.showMessageDialog(null, "Sucedio un error");
+            }
+            jd_EliminarDocente.setVisible(false);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+
+
+    }//GEN-LAST:event_eliminarProyeMouseClicked
+
+    private void eliminarClaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarClaseMouseClicked
+        try {
+            if (jt_EliminarClase.getSelectedRow() >= 0) {
+                Object posi = jt_EliminarClase.getValueAt(jt_EliminarClase.getSelectedRow(), 4);
+
+                DefaultTableModel l = (DefaultTableModel) jt_EliminarClase.getModel();
+                l.removeRow(jt_EliminarClase.getSelectedRow());
+                for (int i = 0; i < ac.getClases().size(); i++) {
+
+                    ac.cargarArchivo();
+                    ac.getClases().remove(i);
+                    try {
+                        ac.escribirArchivo();
+                    } catch (IOException ex) {
+                        Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+
+                JOptionPane.showMessageDialog(null, "Se elimino la clase");
+            } else {
+                JOptionPane.showMessageDialog(null, "Sucedio un error");
+            }
+            jd_EliminarProye.setVisible(false);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error");
+        }
+
+
+    }//GEN-LAST:event_eliminarClaseMouseClicked
+
+    private void agergar_ProyectoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agergar_ProyectoActionPerformed
+        jd_Login.setModal(true);
+        jd_Login.pack();
+        jd_Login.setLocationRelativeTo(this);
+        jd_Login.setVisible(true);
+    }//GEN-LAST:event_agergar_ProyectoActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        jd_Login.setModal(true);
+        jd_Login.pack();
+        jd_Login.setLocationRelativeTo(this);
+        jd_Login.setVisible(true);
+
+
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void ingresar_AdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingresar_AdminMouseClicked
+        if (user_Admin.equals("admin")) {
+            jMenuBar1.setEnabled(true);
+            crear_Alumno.setEnabled(true);
+            CrearDocente.setEnabled(true);
+            agregar_Clase.setEnabled(true);
+            agergar_Proyecto.setEnabled(true);
+        }
+
+
+    }//GEN-LAST:event_ingresar_AdminMouseClicked
+
+    private void ingresar_Admin1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingresar_Admin1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ingresar_Admin1MouseClicked
+
+    private void ingresar_Admin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingresar_Admin1ActionPerformed
+        for (int i = 0; i < aa.getAlumno().size(); i++) {
+            if (user_Admin1.equals(aa.getAlumno().get(i).getUser()) && pass_Admin.equals(aa.getAlumno().get(i).getPass())) {
+                crear_Alumno.setEnabled(true);
+                CrearDocente.setEnabled(true);
+                agregar_Clase.setEnabled(true);
+                agergar_Proyecto.setEnabled(true);
+            }
+        }
+        jd_Login.setVisible(false);
+
+    }//GEN-LAST:event_ingresar_Admin1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1332,16 +1958,24 @@ public class Principal extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Principal.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -1364,9 +1998,11 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu Proyectos;
     private javax.swing.JTextField acarrera_Alumno;
     private javax.swing.JTextField acarrera_Alumno1;
+    private javax.swing.JMenuItem agergar_Proyecto;
     private javax.swing.JButton agregar_Alumno;
     private javax.swing.JMenuItem agregar_Clase;
     private javax.swing.JButton agregar_Docente;
+    private javax.swing.JButton agregar_Proyecto;
     private javax.swing.JTextField alumnos_Clase;
     private javax.swing.JTextField apellido_Alumno;
     private javax.swing.JTextField apellido_Alumno1;
@@ -1377,20 +2013,27 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField carrera_Clase;
     private javax.swing.JTextField codigo_clase;
     private javax.swing.JMenuItem crear_Alumno;
+    private javax.swing.JTextField descripcion_Proye;
+    private javax.swing.JTextField dificultad_Proyecto;
     private javax.swing.JTextField edad_Alumno;
     private javax.swing.JTextField edad_Alumno1;
     private javax.swing.JButton eliminarAlumno;
+    private javax.swing.JButton eliminarClase;
+    private javax.swing.JButton eliminarProye;
     private javax.swing.JMenuItem eliminar_Alumnos;
     private javax.swing.JMenuItem eliminar_Clase;
     private javax.swing.JButton eliminar_Docenta;
     private javax.swing.JMenuItem eliminar_Docente;
-    private javax.swing.JMenuItem eliminar_Docente2;
+    private javax.swing.JMenuItem eliminar_Proye;
+    private javax.swing.JTextField fecha_Proyecto;
     private javax.swing.JTextField id_Alumno;
     private javax.swing.JTextField id_Alumno1;
     private javax.swing.JTextField impartido_Docente;
     private javax.swing.JRadioButton ingieneria_Alumno;
     private javax.swing.JRadioButton ingieneria_Alumno1;
     private javax.swing.JRadioButton ingieneria_Alumno2;
+    private javax.swing.JButton ingresar_Admin;
+    private javax.swing.JButton ingresar_Admin1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1433,8 +2076,24 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -1444,46 +2103,67 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JDialog jd_AgregarClase;
     private javax.swing.JDialog jd_AgregarDocente;
+    private javax.swing.JDialog jd_AgregarProyecto;
+    private javax.swing.JDialog jd_EliminarClase;
     private javax.swing.JDialog jd_EliminarDocente;
+    private javax.swing.JDialog jd_EliminarProye;
+    private javax.swing.JDialog jd_ListaProyecto;
     private javax.swing.JDialog jd_ListarAlumnos;
+    private javax.swing.JDialog jd_ListarClase;
     private javax.swing.JDialog jd_ListarDocentes;
+    private javax.swing.JDialog jd_Login;
     private javax.swing.JDialog jd_ModificarAlumnos;
     private javax.swing.JDialog jd_agregar_Alumnos;
     private javax.swing.JDialog jd_eliminarAlumno;
     private javax.swing.JDialog jd_modificarDocente;
     private javax.swing.JTable jt_DocentesLista;
     private javax.swing.JTable jt_EliminarAlumnos;
+    private javax.swing.JTable jt_EliminarClase;
     private javax.swing.JTable jt_EliminarDocente;
+    private javax.swing.JTable jt_eliminarProye;
+    private javax.swing.JTable jt_listaClases;
     private javax.swing.JTable jt_listarAlumnos;
+    private javax.swing.JTable jt_listar_Proye;
     private javax.swing.JRadioButton licenciatura_Alumno;
     private javax.swing.JRadioButton licenciatura_Alumno1;
     private javax.swing.JRadioButton licenciatura_Alumno2;
     private javax.swing.JMenuItem listarDocentes;
     private javax.swing.JMenuItem listar_Alumnos;
     private javax.swing.JMenuItem listar_Clase;
-    private javax.swing.JMenuItem listar_Docente2;
+    private javax.swing.JMenuItem listar_Proye;
     private javax.swing.JMenuItem modificar_Alumnos;
     private javax.swing.JMenuItem modificar_Clase;
     private javax.swing.JMenuItem modificar_Docente;
-    private javax.swing.JMenuItem modificar_Docente2;
+    private javax.swing.JMenuItem modificar_Proye;
     private javax.swing.JTextField nombre_Alumno;
     private javax.swing.JTextField nombre_Alumno1;
     private javax.swing.JTextField nombre_Clase;
     private javax.swing.JTextField nombre_Docente;
     private javax.swing.JTextField numAula_Clase;
+    private javax.swing.JTextField participantes_Proyecto;
+    private javax.swing.JPasswordField pass_Admin;
+    private javax.swing.JPasswordField pass_Admin1;
     private javax.swing.JTextField pass_Alumno;
     private javax.swing.JTextField pass_Alumno1;
     private javax.swing.JTextField pass_Clase;
     private javax.swing.JTextField pass_Docente;
+    private javax.swing.JTextField pass_Proye;
     private javax.swing.JTextField posgrado_Docente;
     private javax.swing.JTextField promedio_Alumno;
     private javax.swing.JTextField promedio_Alumno1;
+    private javax.swing.JTextField puntuacion_Proyecto;
     private javax.swing.JTextField registro_Alumno;
     private javax.swing.JTextField registro_Alumno1;
     private javax.swing.JTextField registro_Docente;
@@ -1491,13 +2171,19 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JRadioButton salud_Alumno1;
     private javax.swing.JRadioButton salud_Alumno2;
     private javax.swing.JTextField seccion_Clase;
+    private javax.swing.JTextField td_Proyecto;
     private javax.swing.JTextField titulo_Docente;
+    private javax.swing.JTextField titulo_Proyecto;
+    private javax.swing.JTextField user_Admin;
+    private javax.swing.JTextField user_Admin1;
     private javax.swing.JTextField user_Alumno;
     private javax.swing.JTextField user_Alumno1;
     private javax.swing.JTextField user_Docente;
+    private javax.swing.JTextField user_Proyecto;
     private javax.swing.JTextField user_clase;
     // End of variables declaration//GEN-END:variables
     admi_Alumnos aa = new admi_Alumnos("./Alumnos.txt");
     admi_Docente ad = new admi_Docente("./Docente.txt");
     admi_Clase ac = new admi_Clase("./Clase.txt");
+    admi_Proyecto ap = new admi_Proyecto("./Proyecto.txt");
 }
